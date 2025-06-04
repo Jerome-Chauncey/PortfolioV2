@@ -1,6 +1,7 @@
 import React from 'react';
 import onepercent1 from '/public/assets/images/onepercent1.png';
 import onepercent2 from '/public/assets/images/onepercent2.png';
+import currencyCli from '/public/assets/images/currencyConverter.png'; // Add this image
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const Projects = () => {
@@ -14,8 +15,8 @@ const Projects = () => {
         "Market Insights",
         "View and Analyse Live Market Prices"
       ],
-      link: "https://jerome-chauncey.github.io/One-Percent/", // Add your actual project URL
-      repo: "https://github.com/Jerome-Chauncey/One-Percent" // Add your repo URL
+      link: "https://jerome-chauncey.github.io/One-Percent/",
+      repo: "https://github.com/Jerome-Chauncey/One-Percent"
     },
     {
       title: "One Percent - React Revival V2",
@@ -30,8 +31,24 @@ const Projects = () => {
         "⚛️ Component-Based Architecture",
         "💅 Modern UI Design"
       ],
-      link: "https://one-percent-react-revival-v2.onrender.com/", // Add your actual project URL
-      repo: "https://github.com/Jerome-Chauncey/One-Percent---React-Revival-V2" // Add your repo URL
+      link: "https://one-percent-react-revival-v2.onrender.com/",
+      repo: "https://github.com/Jerome-Chauncey/One-Percent---React-Revival-V2"
+    },
+    {
+      title: "💱 Currency Converter CLI",
+      description: "A beginner-friendly, interactive command-line application to manage currencies and convert between them. This tool uses Python and SQLAlchemy to model currency relationships and lets you perform full CRUD operations with simple prompts.",
+      image: currencyCli,
+      highlights: [
+        "🔄 Convert currency using stored exchange rates",
+        "📋 List all available currencies",
+        "🔍 Find currency by code (e.g., USD, EUR)",
+        "➕ Create a new currency",
+        "✏️ Update a currency",
+        "❌ Delete a currency",
+        "🚪 Exit the program gracefully"
+      ],
+      link: "#", // Add your live demo URL if available
+      repo: "https://github.com/Jerome-Chauncey/currency-converterv1" // Add your repo URL
     }
   ];
 
@@ -58,15 +75,17 @@ const Projects = () => {
                 <div className="project-header">
                   <h3>{project.title}</h3>
                   <div className="project-links">
-                    <a 
-                      href={project.link} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      aria-label={`Live demo of ${project.title}`}
-                      className="project-link"
-                    >
-                      Live Demo <FaExternalLinkAlt className="link-icon" />
-                    </a>
+                    {project.link !== "#" && (
+                      <a 
+                        href={project.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        aria-label={`Live demo of ${project.title}`}
+                        className="project-link"
+                      >
+                        Live Demo <FaExternalLinkAlt className="link-icon" />
+                      </a>
+                    )}
                     <a 
                       href={project.repo} 
                       target="_blank" 
