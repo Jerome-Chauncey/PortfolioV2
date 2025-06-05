@@ -1,7 +1,7 @@
 import React from 'react';
 import onepercent1 from '/public/assets/images/onepercent1.png';
 import onepercent2 from '/public/assets/images/onepercent2.png';
-import currencyCli from '/public/assets/images/currencyConverter.png'; // Add this image
+import currencyCli from '/public/assets/images/currency_converter.png'; // Add this image
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const Projects = () => {
