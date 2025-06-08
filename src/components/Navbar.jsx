@@ -33,7 +33,7 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
           
           <nav className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
             <a href="#about">About</a>
-            <a href="#skills">Skills</a>
+            {/* <a href="#skills">Skills</a> */}
             <a href="#projects">Projects</a>
             <a href="#journey">Journey</a>
             <a href="#contact">Contact</a>
