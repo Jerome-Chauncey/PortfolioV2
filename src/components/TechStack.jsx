@@ -18,7 +18,8 @@ import {
   SiGit,
   SiGithub,
   SiRender,
-  SiJson
+  SiJson,
+  SiFlask
 } from 'react-icons/si';
 
 const TechStack = () => {
@@ -38,6 +39,7 @@ const TechStack = () => {
       items: [
         { name: "React", icon: <SiReact /> },
         { name: "Bootstrap", icon: <SiBootstrap /> },
+        { name: "Flask", icon: <SiFlask /> }
       ]
     },
     {
@@ -46,6 +48,7 @@ const TechStack = () => {
         { name: "Git", icon: <SiGit /> },
         { name: "GitHub", icon: <SiGithub /> },
         { name: "Render", icon: <SiRender /> },
+        { name: "JSON Server", icon: <SiJson /> }
 
       ]
     }
