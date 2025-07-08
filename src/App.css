@@ -815,6 +815,7 @@ p {
   color: var(--highlight-color);
 }
 
+
 /* Responsive adjustments */
 @media (max-width: 992px) {
   .about-grid {
