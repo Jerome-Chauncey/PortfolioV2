@@ -1,7 +1,8 @@
 import React from 'react';
 import onepercent1 from '/public/assets/images/onepercent1.png';
 import onepercent2 from '/public/assets/images/onepercent2.png';
-import currencyCli from '/public/assets/images/currency_converter.png'; // Add this image
+import currencyCli from '/public/assets/images/currency_converter.png'; 
+import forex_bureau from '/public/assets/images/Forex_Bureau.png'; 
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const Projects = () => {
@@ -49,6 +50,22 @@ const Projects = () => {
       ],
       link: "#", // Add your live demo URL if available
       repo: "https://github.com/Jerome-Chauncey/currency-converterv1" // Add your repo URL
+    },
+    {
+      title: "💱 Forex Bureau",
+      description: "Get live exchange rates, place orders, set alerts and more. All in one place.",
+      image: forex_bureau,
+      highlights: [
+        "🔐 User signup/login with KYC document upload ",
+        "📊 View live buy/sell exchange rates ",
+        "💱 Place exchange orders (e.g., USD⇄KES) ",
+        "📜 View order history ",
+        "🔔 Rate-threshold alerts",
+        "⚙️ Profile settings page ",
+        "❓ FAQ integration "
+      ],
+      link: "https://forex-bureau-ui.onrender.com/", 
+      repo: "https://github.com/Jerome-Chauncey/Forex-Bureau" // Add your repo URL
     }
   ];
 
