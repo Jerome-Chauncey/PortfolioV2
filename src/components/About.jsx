@@ -106,8 +106,8 @@ const About = () => (
       viewport={{ once: true }}
       className="flex-1 space-y-6 md:pt-12"
     >
-      <h2 className="text-3xl font-semibold">About</h2>
-      <p className="text-gray-700 leading-relaxed max-w-lg">
+      <h2 className="text-3xl font-semibold text-white">About</h2>
+      <p className="text-gray-300 leading-relaxed max-w-lg">
         I'm passionate about merging creativity with technology. My background in trading and sustainable agriculture gives
         me a unique lens for building structured, purposeful digital experiences. I enjoy developing applications that solve
         real-world problems with clean, modern design and solid code foundations.
@@ -117,7 +117,7 @@ const About = () => (
       <div className="space-y-8 mt-8">
         {/* Languages */}
         <div>
-          <h3 className="text-lg font-semibold text-gray dark:text-gray mb-4">Languages</h3>
+          <h3 className="text-lg font-semibold text-gray-200 mb-4">Languages</h3>
           <div className="flex flex-wrap gap-8">
             {[
               { name: "HTML", icon: TechIcons.HTML },
@@ -130,7 +130,7 @@ const About = () => (
                 <div className="w-16 h-16 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg bg-transparent">
                   {tech.icon}
                 </div>
-                <span className="text-sm mt-3 text-gray-600 dark:text-gray-400 font-medium">
+                <span className="text-sm mt-3 text-gray-700 font-medium">
                   {tech.name}
                 </span>
               </div>
@@ -140,7 +140,7 @@ const About = () => (
 
         {/* Frameworks & Libraries */}
         <div>
-          <h3 className="text-lg font-semibold text-gray-800 dark:text-gray mb-4">Frameworks & Libraries</h3>
+          <h3 className="text-lg font-semibold text-gray-200 mb-4">Frameworks & Libraries</h3>
           <div className="flex flex-wrap gap-8">
             {[
               { name: "React", icon: TechIcons.React },
@@ -151,7 +151,7 @@ const About = () => (
                 <div className="w-16 h-16 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg bg-transparent">
                   {tech.icon}
                 </div>
-                <span className="text-sm mt-3 text-gray-600 dark:text-gray-400 font-medium">
+                <span className="text-sm mt-3 text-gray-700 font-medium">
                   {tech.name}
                 </span>
               </div>
@@ -161,7 +161,7 @@ const About = () => (
 
         {/* Tools & Platforms */}
         <div>
-          <h3 className="text-lg font-semibold text-gray-800 dark:text-gray mb-4">Tools & Platforms</h3>
+          <h3 className="text-lg font-semibold text-gray-200 mb-4">Tools & Platforms</h3>
           <div className="flex flex-wrap gap-8">
             {[
               { name: "Git", icon: TechIcons.Git },
@@ -173,7 +173,7 @@ const About = () => (
                 <div className="w-16 h-16 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg bg-transparent">
                   {tech.icon}
                 </div>
-                <span className="text-sm mt-3 text-gray-600 dark:text-gray-400 font-medium">
+                <span className="text-sm mt-3 text-gray-700 font-medium">
                   {tech.name}
                 </span>
               </div>
