@@ -7,14 +7,14 @@ const projectsData = [
     title: "Personal Portfolio V2",
     description: "A sleek, responsive portfolio showcasing my skills and projects, built with Next.js and Tailwind CSS.",
     tech: ["Next.js", "Tailwind", "Vercel"],
-    image: "/src/assets/images/project2.png",
+    image: "/assets/images/project2.png",
     alt: "Personal Portfolio Website Screenshot"
   },
   {
     title: "E-commerce Website",
     description: "A full-featured e-commerce site with product listings, cart, and checkout functionalities.",
     tech: ["React", "Stripe", "Firebase"],
-    image: "/src/assets/images/project1.png",
+    image: "/assets/images/project1.png",
     alt: "E-commerce Website Screenshot"
   },
   {
