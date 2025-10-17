@@ -21,28 +21,28 @@ const projectsData = [
     title: "Blog Platform",
     description: "A modern blog with user authentication, post creation, and a rich text editor for comments.",
     tech: ["Vue.js", "Node.js", "MongoDB"],
-    image: "/public/assets/images/currency_converter.png",
+    image: "/assets/images/currency_converter.png",
     alt: "Blog Platform Screenshot"
   },
   {
     title: "Data Visualization App",
     description: "An interactive dashboard visualizing complex datasets with dynamic charts and graphs using D3.js.",
     tech: ["D3.js", "JavaScript", "SVG"],
-    image: "/public/assets/images/Forex_Bureau.png",
+    image: "/assets/images/Forex_Bureau.png",
     alt: "Data Visualization Dashboard"
   },
   {
     title: "Mobile App UI Kit",
     description: "A comprehensive collection of UI components for building sleek and modern mobile applications.",
     tech: ["Figma", "Design System"],
-    image: "/public/assets/images/worksphere.png",
+    image: "/assets/images/worksphere.png",
     alt: "Mobile App UI Kit Design"
   },
   {
     title: "Open Source Library",
     description: "A reusable library of utility functions designed to streamline common development tasks.",
     tech: ["TypeScript", "NPM", "Jest"],
-    image: "/public/assets/images/tuinue_wasichana.png",
+    image: "/assets/images/tuinue_wasichana.png",
     alt: "Open Source Library Code"
   },
 ];

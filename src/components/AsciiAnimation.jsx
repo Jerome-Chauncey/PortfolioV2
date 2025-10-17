@@ -18,7 +18,7 @@ const AsciiAnimation = ({
       className={`overflow-hidden rounded-lg w-full max-w-md mx-auto lg:max-w-none lg:w-96 xl:w-[800px] pt-8 lg:pt-0 ${className}`}
     >
       <img 
-        src="/public/assets/images/ascii-animation.gif"
+        src="/assets/images/ascii-animation.gif"
         alt={alt}
         className="w-full h-full object-cover"
       />
