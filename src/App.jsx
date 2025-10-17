@@ -1,34 +1,30 @@
-import { useState } from 'react'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import About from './components/About'
-// import Education from './components/Education'
-// import Skills from './components/Skills'
-import TechStack from './components/TechStack'
-import Projects from './components/Projects'
-import Journey from './components/Journey'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import React from "react";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Journey from "./components/Journey";
+import Contact from "./components/Contact";
+import LeftRail from "./components/LeftRail";
+import Footer from "./components/Footer";
+import ScrollProgressBar from "./components/ScrollProgressBar";
 
-function App() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
+const App = () => {
   return (
-    <div className="app">
-      <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-      <main>
-        <Hero />
-        <About />
-        {/* <Education /> */}
-        {/* <Skills /> */}
-        <TechStack />
-        <Projects />
-        <Journey />
-        <Contact />
-      </main>
-      <Footer />
+    <div className="bg-white text-black font-poppins">
+      <div className="flex">
+        <LeftRail />
+        <main className="flex-1">
+          <ScrollProgressBar />
+          <section id="hero"><Hero /></section>
+          <section id="about"><About /></section>
+          <section id="projects"><Projects /></section>
+          <section id="contact"><Contact /></section>
+          <Footer />
+        </main>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

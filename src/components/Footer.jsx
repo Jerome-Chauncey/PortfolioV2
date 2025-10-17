@@ -1,33 +1,9 @@
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import React from "react";
 
-const Footer = () => {
-  return (
-    <footer className="footer">
-      <div className="container">
-        <div className="footer-content">
-          <p>&copy; {new Date().getFullYear()} Jerome Chauncey. All rights reserved.</p>
-          <div className="social-links">
-            <a 
-              href="https://github.com/jerome-chauncey" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-            >
-              <FaGithub />
-            </a>
-            <a 
-              href="https://www.linkedin.com/in/jerome-chauncey/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-            >
-              <FaLinkedin />
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-  )
-}
+const Footer = () => (
+  <footer className="text-center py-6 text-sm text-gray-500 border-t">
+    © {new Date().getFullYear()} Jerome Chauncey — All Rights Reserved.
+  </footer>
+);
 
-export default Footer
+export default Footer;

@@ -1,132 +1,81 @@
-import React from 'react';
-import onepercent1 from '/public/assets/images/onepercent1.png';
-import onepercent2 from '/public/assets/images/onepercent2.png';
-import currencyCli from '/public/assets/images/currency_converter.png'; 
-import forex_bureau from '/public/assets/images/Forex_Bureau.png'; 
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import React from "react";
+import { motion } from "framer-motion";
 
-const Projects = () => {
-  const projects = [
-    {
-      title: "One Percent",
-      description: "One Percent helps traders and investors manage risks ethically through education, tools and market insights.",
-      image: onepercent1,
-      highlights: [
-        "Self-Regulation Tools",
-        "Market Insights",
-        "View and Analyse Live Market Prices"
-      ],
-      link: "https://jerome-chauncey.github.io/One-Percent/",
-      repo: "https://github.com/Jerome-Chauncey/One-Percent"
-    },
-    {
-      title: "One Percent - React Revival V2",
-      description: "A collaborative React project focused on promoting self-regulation in financial markets through education, interactive tools, and trading resources. This upgraded version is a refined, responsive Single Page Application (SPA) built with React, Bootstrap, and deployed via Render.",
-      image: onepercent2,
-      highlights: [
-        "📝 Interactive Self-Regulation Checklist",
-        "📚 Education Hub",
-        "Market Tools",
-        "🔒 Login & Logout Functionality",
-        "📄 Structured Pages",
-        "⚛️ Component-Based Architecture",
-        "💅 Modern UI Design"
-      ],
-      link: "https://one-percent-react-revival-v2.onrender.com/",
-      repo: "https://github.com/Jerome-Chauncey/One-Percent---React-Revival-V2"
-    },
-    {
-      title: "💱 Currency Converter CLI",
-      description: "A beginner-friendly, interactive command-line application to manage currencies and convert between them. This tool uses Python and SQLAlchemy to model currency relationships and lets you perform full CRUD operations with simple prompts.",
-      image: currencyCli,
-      highlights: [
-        "🔄 Convert currency using stored exchange rates",
-        "📋 List all available currencies",
-        "🔍 Find currency by code (e.g., USD, EUR)",
-        "➕ Create a new currency",
-        "✏️ Update a currency",
-        "❌ Delete a currency",
-        "🚪 Exit the program gracefully"
-      ],
-      link: "#", // Add your live demo URL if available
-      repo: "https://github.com/Jerome-Chauncey/currency-converterv1" // Add your repo URL
-    },
-    {
-      title: "💱 Forex Bureau",
-      description: "Get live exchange rates, place orders, set alerts and more. All in one place.",
-      image: forex_bureau,
-      highlights: [
-        "🔐 User signup/login with KYC document upload ",
-        "📊 View live buy/sell exchange rates ",
-        "💱 Place exchange orders (e.g., USD⇄KES) ",
-        "📜 View order history ",
-        "🔔 Rate-threshold alerts",
-        "⚙️ Profile settings page ",
-        "❓ FAQ integration "
-      ],
-      link: "https://forex-bureau-ui.onrender.com/", 
-      repo: "https://github.com/Jerome-Chauncey/Forex-Bureau" // Add your repo URL
-    }
-  ];
+const projectsData = [
+  {
+    title: "Personal Portfolio V2",
+    description: "A sleek, responsive portfolio showcasing my skills and projects, built with Next.js and Tailwind CSS.",
+    tech: ["Next.js", "Tailwind", "Vercel"],
+  },
+  {
+    title: "E-commerce Website",
+    description: "A full-featured e-commerce site with product listings, cart, and checkout functionalities.",
+    tech: ["React", "Stripe", "Firebase"],
+  },
+  {
+    title: "Blog Platform",
+    description: "A modern blog with user authentication, post creation, and a rich text editor for comments.",
+    tech: ["Vue.js", "Node.js", "MongoDB"],
+  },
+  {
+    title: "Data Visualization App",
+    description: "An interactive dashboard visualizing complex datasets with dynamic charts and graphs using D3.js.",
+    tech: ["D3.js", "JavaScript", "SVG"],
+  },
+  {
+    title: "Mobile App UI Kit",
+    description: "A comprehensive collection of UI components for building sleek and modern mobile applications.",
+    tech: ["Figma", "Design System"],
+  },
+  {
+    title: "Open Source Library",
+    description: "A reusable library of utility functions designed to streamline common development tasks.",
+    tech: ["TypeScript", "NPM", "Jest"],
+  },
+];
 
-  return (
-    <section id="projects" className="projects">
-      <div className="container">
-        <h2>Projects</h2>
-        <div className="projects-grid">
-          {projects.map((project, index) => (
-            <div key={index} className="project-card">
-              <div className="project-image-container">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
-                  className="project-image"
-                  style={{ 
-                    width: '100%',
-                    height: 'auto',
-                    display: 'block' 
-                  }}
-                />
-              </div>
-              <div className="project-content">
-                <div className="project-header">
-                  <h3>{project.title}</h3>
-                  <div className="project-links">
-                    {project.link !== "#" && (
-                      <a 
-                        href={project.link} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        aria-label={`Live demo of ${project.title}`}
-                        className="project-link"
-                      >
-                        Live Demo <FaExternalLinkAlt className="link-icon" />
-                      </a>
-                    )}
-                    <a 
-                      href={project.repo} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      aria-label={`GitHub repository for ${project.title}`}
-                      className="project-link"
-                    >
-                      GitHub <FaExternalLinkAlt className="link-icon" />
-                    </a>
-                  </div>
-                </div>
-                <p>{project.description}</p>
-                <div className="project-highlights">
-                  {project.highlights.map((highlight, i) => (
-                    <span key={i} className="highlight-tag">{highlight}</span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          ))}
+const Projects = () => (
+  <motion.section
+    id="projects"
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+    viewport={{ once: true }}
+    className="max-w-4xl mr-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 bg-background-light dark:bg-background-dark text-content-light dark:text-content-dark font-display md:px-20 lg:px-20 mt-0 lg:mt-[-100px] xl:mt-[-100px]"
+  >
+    
+    <div className="flex items-center mb-8">
+      <h2 className="text-2xl sm:text-3xl font-bold text-heading-light dark:text-heading-dark flex-grow">
+        <span className="text-primary mr-2"></span> Some Things I’ve Built
+      </h2>
+      <div className="h-px bg-content-light/20 dark:bg-content-dark/20 flex-1 ml-4"></div>
+    </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {projectsData.map((project, index) => (
+        <div
+          key={index}
+          className="group relative flex flex-col bg-background-light dark:bg-background-dark/50 hover:bg-background-dark/70 rounded-lg p-6 transition-all duration-300 ease-in-out transform hover:-translate-y-2 cursor-pointer shadow-[0_10px_30px_-15px_rgba(2,12,27,0.7)] hover:shadow-2xl"
+        >
+          <div className="flex justify-between items-start mb-4">
+            <span className="material-symbols-outlined text-primary text-4xl">folder</span>
+            <a className="text-content-light dark:text-content-dark hover:text-primary transition-colors" href="#">
+              <span className="material-symbols-outlined">open_in_new</span>
+            </a>
+          </div>
+          <h3 className="text-xl font-bold text-heading-light dark:text-heading-dark group-hover:text-primary transition-colors mb-2">
+            {project.title}
+          </h3>
+          <p className="text-sm leading-relaxed mb-4">{project.description}</p>
+          <div className="mt-auto flex items-center gap-x-4 text-xs font-mono text-content-light dark:text-content-dark">
+            {project.tech.map((tech, i) => (
+              <span key={i}>{tech}</span>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
-  );
-};
+      ))}
+    </div>
+    
+  </motion.section>
+);
 
 export default Projects;
