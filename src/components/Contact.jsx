@@ -11,8 +11,8 @@ const Contact = () => (
     viewport={{ once: true }}
     className="px-6 md:px-20 py-20 text-center"
   >
-    <h2 className="text-3xl font-semibold mb-4">Contact</h2>
-    <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
+    <h2 className="text-3xl font-semibold mb-4 text-white">Contact</h2>
+    <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
       Feel free to reach out for collaborations, project inquiries, or just a friendly chat!
     </p>
     
@@ -20,28 +20,28 @@ const Contact = () => (
     <div className="flex justify-center gap-6 mb-8">
       <a 
         href="#" 
-        className="text-2xl text-gray-700 hover:text-black transition-colors"
+        className="text-2xl text-gray-400 hover:text-white transition-colors"
         aria-label="GitHub"
       >
         <FaGithub />
       </a>
       <a 
         href="#" 
-        className="text-2xl text-gray-700 hover:text-blue-600 transition-colors"
+        className="text-2xl text-gray-400 hover:text-white transition-colors"
         aria-label="LinkedIn"
       >
         <FaLinkedin />
       </a>
       <a 
         href="#" 
-        className="text-2xl text-gray-700 hover:text-blue-400 transition-colors"
+        className="text-2xl text-gray-400 hover:text-white transition-colors"
         aria-label="Twitter"
       >
         <FaTwitter />
       </a>
       <a 
         href="#" 
-        className="text-2xl text-gray-700 hover:text-pink-600 transition-colors"
+        className="text-2xl text-gray-400 hover:text-white transition-colors"
         aria-label="Instagram"
       >
         <FaInstagram />
@@ -51,7 +51,7 @@ const Contact = () => (
     {/* Email Button */}
     <a
       href="mailto:chaunceyjerome@icloud.com"
-      className="inline-flex items-center gap-2 text-lg font-medium border border-black px-6 py-3 rounded hover:bg-black hover:text-white transition-colors"
+      className="inline-flex items-center gap-2 text-lg font-medium border border-white text-white px-6 py-3 rounded hover:bg-white hover:text-gray-900 transition-colors"
     >
       <FaEnvelope />
       Get in touch

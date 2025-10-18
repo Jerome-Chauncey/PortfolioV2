@@ -54,11 +54,11 @@ const Projects = () => (
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8 }}
     viewport={{ once: true }}
-    className="max-w-7xl mr-auto px-4 sm:px-6 lg:px-20 py-12 sm:py-16 bg-background-light dark:bg-background-dark text-content-light dark:text-content-dark font-display relative"
+    className="max-w-7xl mr-auto px-4 sm:px-28 lg:px-20 py-12 sm:py-16 bg-background-light dark:bg-background-dark text-content-light dark:text-content-dark font-display relative"
   >
     
     <div className="flex items-center mb-12">
-      <h2 className="text-2xl sm:text-3xl font-bold text-heading-light dark:text-heading-dark flex-grow">
+      <h2 className="text-2xl sm:text-3xl font-bold text-white flex-grow">
         <span className="text-primary mr-2"></span> Some Things I've Built
       </h2>
       <div className="h-px bg-content-light/20 dark:bg-content-dark/20 flex-1 ml-4"></div>
@@ -111,14 +111,14 @@ const Projects = () => (
                   </a>
                 </div>
                 
-                <h3 className="text-xl sm:text-2xl font-bold text-heading-light dark:text-heading-dark group-hover:text-primary transition-colors mb-3">
+                <h3 className="text-xl sm:text-2xl font-bold text-white group-hover:text-primary transition-colors mb-3">
                   {project.title}
                 </h3>
-                <p className="text-sm sm:text-base leading-relaxed mb-4 text-content-light dark:text-content-dark/80 flex-grow">
+                <p className="text-sm sm:text-base leading-relaxed mb-4 text-gray-300 flex-grow">
                   {project.description}
                 </p>
                 
-                <div className="flex items-center gap-x-4 text-xs sm:text-sm font-mono text-content-light dark:text-content-dark flex-wrap gap-2">
+                <div className="flex items-center gap-x-4 text-xs sm:text-sm font-mono text-gray-400 flex-wrap gap-2">
                   {project.tech.map((tech, i) => (
                     <span key={i} className="px-2 py-1 bg-primary/10 rounded-md">
                       {tech}

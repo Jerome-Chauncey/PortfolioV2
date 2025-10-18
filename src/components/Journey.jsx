@@ -107,7 +107,7 @@ const Journey = () => {
                   </div>
                 </div>
                 <div className="pt-2">
-                  <p className="text-sm font-medium text-gray-700">{item.year}</p>
+                  <p className="text-sm font-medium text-white">{item.year}</p>
                   <h3 className="text-lg font-bold text-white">{item.title}</h3>
                   <p className="mt-1 text-gray-300">{item.description}</p>
                 </div>
@@ -122,7 +122,7 @@ const Journey = () => {
           href="/resume.pdf" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-gray-700 rounded-lg hover:bg-primary/90 transition-colors font-medium"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-medium"
         >
           <svg fill="" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg">
             <path d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Zm-42.34-62.34L144,172.69V136a8,8,0,0,0-16,0v36.69l-13.66-13.65a8,8,0,0,0-11.32,11.32l24,24a8,8,0,0,0,11.32,0l24-24a8,8,0,0,0-11.32-11.32Z"></path>
