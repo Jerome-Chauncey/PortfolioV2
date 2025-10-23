@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const journeyData = [
   {
-    year: "2018 - 2020",
+    year: "2020 - Present",
     title: "Financial Markets Trader",
     description: "Explored the complexities of financial markets, developing analytical skills and a deep understanding of economic trends.",
     icon: (
@@ -13,7 +13,7 @@ const journeyData = [
     ),
   },
   {
-    year: "2020 - 2021",
+    year: "2021",
     title: "Project Leadership",
     description: "Managed teams and projects, honing skills in communication, planning, and execution to deliver successful outcomes.",
     icon: (
@@ -23,7 +23,7 @@ const journeyData = [
     ),
   },
   {
-    year: "2021 - 2022",
+    year: "2023 - Present",
     title: "Sustainable Agriculture",
     description: "Pivoted to a field focused on environmental impact, gaining hands-on experience in sustainable practices and ecological systems.",
     icon: (
@@ -33,7 +33,7 @@ const journeyData = [
     ),
   },
   {
-    year: "2022 - 2023",
+    year: "2025",
     title: "Moringa School",
     description: "Undertook an intensive software development program, building a strong foundation in coding, algorithms, and web technologies.",
     icon: (
@@ -43,7 +43,7 @@ const journeyData = [
     ),
   },
   {
-    year: "2023 - Present",
+    year: "2025 - Present",
     title: "Front-End Engineer",
     description: "Applying my diverse background and new technical skills to build intuitive, user-centric web experiences.",
     icon: (
@@ -119,7 +119,7 @@ const Journey = () => {
             {/* View Full Resume Button */}
       <footer className="sticky bottom-0 z-10 flex justify-center p-6 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-slate-200/50 dark:border-slate-800/50">
         <a 
-          href="/resume.pdf" 
+          href="https://jerome-chauncey-resume.tiiny.site/?mode=suggestions" 
           target="_blank" 
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-medium"

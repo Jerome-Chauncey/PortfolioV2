@@ -6,7 +6,6 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollProgressBar from "./components/ScrollProgressBar";
 import LeftRail from "./components/LeftRail";
-import DotCursor from "./components/DotCursor";
 import GradientBackground from "./components/GradientBackground";
 
 
@@ -14,7 +13,7 @@ const App = () => {
   return (
     <div className=" text-black font-poppins">
       <GradientBackground />
-      <DotCursor />
+      
       <div className="flex">
         
         <LeftRail />

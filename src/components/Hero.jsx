@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Terminal from "./Terminal";
 
 const Hero = () => {
-  const text = "Jerome Chauncey — Digital Creator & Trader";
+  const text = "Jerome Chauncey - Building on the web. Trading in the markets. Learning every day.";
   const [displayed, setDisplayed] = useState("");
   const [index, setIndex] = useState(0);
 
@@ -30,7 +30,7 @@ const Hero = () => {
           {displayed}
         </h1>
         <p className="text-lg md:text-xl text-gray-300 max-w-lg leading-relaxed">
-          I build accessible, pixel-perfect digital experiences for the web.
+          I build web products and trade markets, both powered by precision and curiosity.
         </p>
       </motion.div>
 
