@@ -19,28 +19,22 @@ const Contact = () => (
     {/* Social Media Icons */}
     <div className="flex justify-center gap-6 mb-8">
       <a 
-        href="#" 
+        href="https://github.com/Jerome-Chauncey" target="_blank"
         className="text-2xl text-gray-400 hover:text-white transition-colors"
         aria-label="GitHub"
       >
         <FaGithub />
       </a>
       <a 
-        href="#" 
+        href="https://www.linkedin.com/in/jerome-chauncey/" target="_blank"
         className="text-2xl text-gray-400 hover:text-white transition-colors"
         aria-label="LinkedIn"
       >
         <FaLinkedin />
       </a>
+ 
       <a 
-        href="#" 
-        className="text-2xl text-gray-400 hover:text-white transition-colors"
-        aria-label="Twitter"
-      >
-        <FaTwitter />
-      </a>
-      <a 
-        href="#" 
+        href="https://www.instagram.com/chaunceyyy__/" target="_blank"
         className="text-2xl text-gray-400 hover:text-white transition-colors"
         aria-label="Instagram"
       >
@@ -50,7 +44,7 @@ const Contact = () => (
 
     {/* Email Button */}
     <a
-      href="mailto:chaunceyjerome@icloud.com"
+      href="mailto:omondijerome7@gmail.com"
       className="inline-flex items-center gap-2 text-lg font-medium border border-white text-white px-6 py-3 rounded hover:bg-white hover:text-gray-900 transition-colors"
     >
       <FaEnvelope />
