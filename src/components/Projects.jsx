@@ -157,7 +157,7 @@ const Projects = () => (
       {/* GIF / Animation Section */}
       <div className="w-full lg:w-1/3">
         <div className="sticky top-8">
-          <div className="relative lg:left-44 pt-8 lg:pt-0 px-4 lg:px-0">
+          <div className="pt-8 lg:pt-0 px-4 lg:px-0 lg:ml-8">
             <AsciiAnimation />
           </div>
         </div>
