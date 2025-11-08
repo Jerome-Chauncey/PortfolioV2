@@ -4,6 +4,7 @@ import {
   FaGitAlt, FaGithub, FaNode, FaPython,
   FaAws, FaDatabase 
 } from 'react-icons/fa';
+import { SiShopify } from "react-icons/si";
 import { SiExpress, SiPostgresql, SiDjango, SiBootstrap } from 'react-icons/si';
 
 const Skills = () => {
@@ -19,7 +20,8 @@ const Skills = () => {
     { name: "PostgreSQL", icon: <SiPostgresql /> },
     { name: "Python", icon: <FaPython /> },
     { name: "Django", icon: <SiDjango /> },
-    { name: "AWS", icon: <FaAws /> }
+    { name: "AWS", icon: <FaAws /> },
+    { name: "Shopify", icon: <SiShopify /> }
   ];
 
   return (

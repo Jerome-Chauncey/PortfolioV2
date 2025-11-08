@@ -4,6 +4,14 @@ import AsciiAnimation from "./AsciiAnimation.jsx";
 
 const projectsData = [
   {
+    title: "Case Kulture Ke",
+    description: "Case Kulture is an online store offering trendy phone cases and accessories, focused on stylish, high-quality, and functional designs for everyday use.",
+    tech: ["Shopify", "Canva", "Google Cloud Console"],
+    image: "/assets/images/case_kulture_ke.png",
+    alt: "Case Kulture Ke Screenshot",
+    link: "https://casekultureke.com/",
+  },
+  {
     title: "Worksphere",
     description: "A job marketplace web platform with ML-powered job matching.",
     tech: ["Laravel", "Tailwind", "MySQL", "Python"],

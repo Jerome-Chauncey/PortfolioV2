@@ -116,6 +116,14 @@ const TechIcons = {
       className="w-8 h-8"
     />
   ),
+  Shopify: (
+    <img
+      src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-shopify-an-e-commerce-platform-that-helps-to-sell-online-logo-color-tal-revivo.png"
+      alt="Shopify"
+      className="w-8 h-8"
+    />
+  ),
+
 };
 
 
@@ -206,6 +214,7 @@ const About = () => (
               { name: "Render", icon: TechIcons.Render },
               { name: "JSON Server", icon: TechIcons.JSON },
               { name: "AWS", icon: TechIcons.AWS },
+              { name: "Shopify", icon: TechIcons.Shopify },
             ].map((tech, index) => (
               <div key={index} className="flex flex-col items-center group">
                 <div className="w-16 h-16 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg bg-transparent">
