@@ -119,7 +119,7 @@ const Journey = () => {
             {/* View Full Resume Button */}
       <footer className="sticky bottom-0 z-10 flex justify-center p-6 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-slate-200/50 dark:border-slate-800/50">
         <a 
-          href="https://jerome-chauncey-resume.tiiny.site/?mode=suggestions" 
+          href="https://jerome-chauncey-resume.tiiny.site" 
           target="_blank" 
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-medium"
