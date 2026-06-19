@@ -4,8 +4,18 @@ import AsciiAnimation from "./AsciiAnimation.jsx";
 
 const projectsData = [
   {
+    title: "Afrinet Carbon",
+    description:
+      "A corporate sustainability platform built for carbon project development, renewable energy solutions, climate impact reporting, and environmental consulting services across Africa. Features a modern responsive design, content management system, and SEO-focused architecture.",
+    tech: ["Laravel", "PHP", "MySQL", "Tailwind CSS", "JavaScript"],
+    image: "/assets/images/afrinet_carbon.png",
+    alt: "Afrinet Carbon Website Screenshot",
+    link: "https://afrinetcarbon.com/",
+  },
+  {
     title: "Case Kulture Ke",
-    description: "Case Kulture is an online store offering trendy phone cases and accessories, focused on stylish, high-quality, and functional designs for everyday use.",
+    description:
+      "Case Kulture is an online store offering trendy phone cases and accessories, focused on stylish, high-quality, and functional designs for everyday use.",
     tech: ["Shopify", "Canva", "Google Cloud Console"],
     image: "/assets/images/case_kulture_ke.png",
     alt: "Case Kulture Ke Screenshot",
@@ -21,7 +31,8 @@ const projectsData = [
   },
   {
     title: "Tuinue Wasichana",
-    description: "Tuinue Wasichana is a web application designed to empower girls across Africa by addressing period poverty and educational barriers.",
+    description:
+      "Tuinue Wasichana is a web application designed to empower girls across Africa by addressing period poverty and educational barriers.",
     tech: ["React", "Bootstrap", "Flask", "SQLAlchemy", "PostgreSQL", "Python"],
     image: "/assets/images/tuinue_wasichana.png",
     alt: "Tuinue Wasichana Screenshot",
@@ -29,7 +40,8 @@ const projectsData = [
   },
   {
     title: "Currency Converter CLI",
-    description: "A beginner-friendly, interactive command-line application to manage currencies and convert between them.",
+    description:
+      "A beginner-friendly, interactive command-line application to manage currencies and convert between them.",
     tech: ["Python", "CLI"],
     image: "/assets/images/currency_converter.png",
     alt: "Currency Converter CLI Screenshot",
@@ -37,7 +49,8 @@ const projectsData = [
   },
   {
     title: "Forex Bureau",
-    description: "A modern online Forex bureau web application that allows users to sign up, upload KYC documents, view live currency rates, place and track exchange orders, manage rate alerts, and browse FAQs. This README covers project overview, setup, migrations, running server and client, and deployment configuration.",
+    description:
+      "A modern online Forex bureau web application that allows users to sign up, upload KYC documents, view live currency rates, place and track exchange orders, manage rate alerts, and browse FAQs. This README covers project overview, setup, migrations, running server and client, and deployment configuration.",
     tech: ["Python", "Flask", "PostgreSQL", "React", "Bootstrap"],
     image: "/assets/images/Forex_Bureau.png",
     alt: "Forex Bureau Screenshot",
@@ -45,7 +58,8 @@ const projectsData = [
   },
   {
     title: "One Percent V2",
-    description: "A team-based React SPA that refines the original with enhanced UI, component architecture, and responsive design.",
+    description:
+      "A team-based React SPA that refines the original with enhanced UI, component architecture, and responsive design.",
     tech: ["React", "Bootstrap", "TradingView Widgets", "Render", "Javascript"],
     image: "/assets/images/project2.png",
     alt: "One Percent V2 Design",
@@ -53,8 +67,9 @@ const projectsData = [
   },
   {
     title: "One Percent",
-    description: "One Percent empowers traders and financial professionals to uphold integrity in the markets. Rather than waiting for regulators to act, we promote proactive self-regulation to ensure fairness, transparency, and trust.",
-    tech: ["HTML", "JavaScript", "Bootstrap", ],
+    description:
+      "One Percent empowers traders and financial professionals to uphold integrity in the markets. Rather than waiting for regulators to act, we promote proactive self-regulation to ensure fairness, transparency, and trust.",
+    tech: ["HTML", "JavaScript", "Bootstrap"],
     image: "/assets/images/project1.png",
     alt: "One Percent",
     link: "https://jerome-chauncey.github.io/One-Percent/",
@@ -123,14 +138,18 @@ const Projects = () => (
               {/* Project Info */}
               <div className="flex-1 flex flex-col h-full">
                 <div className="flex justify-between items-start mb-3">
-                  <span className="material-symbols-outlined text-white text-4xl">folder</span>
+                  <span className="material-symbols-outlined text-white text-4xl">
+                    folder
+                  </span>
                   <a
                     className="text-content-light light:text-content-dark hover:text-primary transition-colors"
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span className="material-symbols-outlined">open_in_new</span>
+                    <span className="material-symbols-outlined">
+                      open_in_new
+                    </span>
                   </a>
                 </div>
 
@@ -143,7 +162,10 @@ const Projects = () => (
 
                 <div className="flex items-center gap-x-4 text-xs sm:text-sm font-mono text-white flex-wrap gap-2">
                   {project.tech.map((tech, i) => (
-                    <span key={i} className="px-2 py-1 bg-primary/10 rounded-md">
+                    <span
+                      key={i}
+                      className="px-2 py-1 bg-primary/10 rounded-md"
+                    >
                       {tech}
                     </span>
                   ))}
