@@ -12,50 +12,50 @@ const projectsData = [
     alt: "Afrinet Carbon Website Screenshot",
     link: "https://afrinetcarbon.com/",
   },
-  {
-    title: "Case Kulture Ke",
-    description:
-      "Case Kulture is an online store offering trendy phone cases and accessories, focused on stylish, high-quality, and functional designs for everyday use.",
-    tech: ["Shopify", "Canva", "Google Cloud Console"],
-    image: "/assets/images/case_kulture_ke.png",
-    alt: "Case Kulture Ke Screenshot",
-    link: "https://casekultureke.com/",
-  },
-  {
-    title: "Worksphere",
-    description: "A job marketplace web platform with ML-powered job matching.",
-    tech: ["Laravel", "Tailwind", "MySQL", "Python"],
-    image: "/assets/images/worksphere.png",
-    alt: "Worksphere Screenshot",
-    link: "http://ec2-13-60-32-165.eu-north-1.compute.amazonaws.com/",
-  },
-  {
-    title: "Tuinue Wasichana",
-    description:
-      "Tuinue Wasichana is a web application designed to empower girls across Africa by addressing period poverty and educational barriers.",
-    tech: ["React", "Bootstrap", "Flask", "SQLAlchemy", "PostgreSQL", "Python"],
-    image: "/assets/images/tuinue_wasichana.png",
-    alt: "Tuinue Wasichana Screenshot",
-    link: "https://tuinue-wasichana-v3-1.onrender.com/",
-  },
-  {
-    title: "Currency Converter CLI",
-    description:
-      "A beginner-friendly, interactive command-line application to manage currencies and convert between them.",
-    tech: ["Python", "CLI"],
-    image: "/assets/images/currency_converter.png",
-    alt: "Currency Converter CLI Screenshot",
-    link: "https://github.com/Jerome-Chauncey/currency-converterv1",
-  },
-  {
-    title: "Forex Bureau",
-    description:
-      "A modern online Forex bureau web application that allows users to sign up, upload KYC documents, view live currency rates, place and track exchange orders, manage rate alerts, and browse FAQs. This README covers project overview, setup, migrations, running server and client, and deployment configuration.",
-    tech: ["Python", "Flask", "PostgreSQL", "React", "Bootstrap"],
-    image: "/assets/images/Forex_Bureau.png",
-    alt: "Forex Bureau Screenshot",
-    link: "https://forex-bureau-ui.onrender.com/",
-  },
+  // {
+  //   title: "Case Kulture Ke",
+  //   description:
+  //     "Case Kulture is an online store offering trendy phone cases and accessories, focused on stylish, high-quality, and functional designs for everyday use.",
+  //   tech: ["Shopify", "Canva", "Google Cloud Console"],
+  //   image: "/assets/images/case_kulture_ke.png",
+  //   alt: "Case Kulture Ke Screenshot",
+  //   link: "https://casekultureke.com/",
+  // },
+  // {
+  //   title: "Worksphere",
+  //   description: "A job marketplace web platform with ML-powered job matching.",
+  //   tech: ["Laravel", "Tailwind", "MySQL", "Python"],
+  //   image: "/assets/images/worksphere.png",
+  //   alt: "Worksphere Screenshot",
+  //   link: "http://ec2-13-60-32-165.eu-north-1.compute.amazonaws.com/",
+  // },
+  // {
+  //   title: "Tuinue Wasichana",
+  //   description:
+  //     "Tuinue Wasichana is a web application designed to empower girls across Africa by addressing period poverty and educational barriers.",
+  //   tech: ["React", "Bootstrap", "Flask", "SQLAlchemy", "PostgreSQL", "Python"],
+  //   image: "/assets/images/tuinue_wasichana.png",
+  //   alt: "Tuinue Wasichana Screenshot",
+  //   link: "https://tuinue-wasichana-v3-1.onrender.com/",
+  // },
+  // {
+  //   title: "Currency Converter CLI",
+  //   description:
+  //     "A beginner-friendly, interactive command-line application to manage currencies and convert between them.",
+  //   tech: ["Python", "CLI"],
+  //   image: "/assets/images/currency_converter.png",
+  //   alt: "Currency Converter CLI Screenshot",
+  //   link: "https://github.com/Jerome-Chauncey/currency-converterv1",
+  // },
+  // {
+  //   title: "Forex Bureau",
+  //   description:
+  //     "A modern online Forex bureau web application that allows users to sign up, upload KYC documents, view live currency rates, place and track exchange orders, manage rate alerts, and browse FAQs. This README covers project overview, setup, migrations, running server and client, and deployment configuration.",
+  //   tech: ["Python", "Flask", "PostgreSQL", "React", "Bootstrap"],
+  //   image: "/assets/images/Forex_Bureau.png",
+  //   alt: "Forex Bureau Screenshot",
+  //   link: "https://forex-bureau-ui.onrender.com/",
+  // },
   {
     title: "One Percent V2",
     description:
